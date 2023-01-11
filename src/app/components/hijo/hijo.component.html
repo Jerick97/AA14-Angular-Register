@@ -1,0 +1,34 @@
+<div class="flex flex-col w-96 mx-auto">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          <table class="min-w-full text-center">
+            <thead class="border-b bg-gray-800">
+              <tr>
+                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                  #
+                </th>
+                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                  Nombre
+                </th>
+                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                  DNI
+                </th>
+                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                  Estado Civil
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b" *ngFor="let user of usuariosHijo; index as id">
+                <td class="px-5 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{id + 1}}</td>
+                <td class="px-5 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{user.name}}</td>
+                <td class="px-5 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{user.dni}}</td>
+                <td class="px-5 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{user.civil}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
